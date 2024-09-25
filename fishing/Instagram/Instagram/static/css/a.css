@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    font-size: 14px;
+}
+
+.wrapper {
+    max-width: 300px;
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+}
+
+.header {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.top,
+.signup {
+    background: #fff;
+    padding: 20px 40px 20px;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto 35px;
+}
+
+.form .input_field {
+    margin-bottom: 5px;
+}
+
+.btn {
+    width: 100%;
+    margin: 10px 0;
+    background-color: #5db1ff;
+    border: 1px solid #5db1ff;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    display: block;
+    cursor: pointer;
+}
+
+.or {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15px;
+    margin: 15px 0 20px;
+}
+
+.line {
+    width: 105px;
+    height: 2px;
+    background: #efefef;
+}
+
+.or p {
+    color: #999;
+    font-size: 12px;
+}
+
+.fb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fb p {
+    cursor: pointer;
+}
+
+.fb img {
+    width: 16px;
+    height: 16px;
+}
+
+.fb p {
+    color: #385185;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.forgot {
+    font-size: 12px;
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 22px;
+}
+
+.forgot a {
+    color: #1696E4;
+    font-weight: 500;
+}
+
+.signup {
+    font-size: 12px;
+    margin-top: -65px;
+    text-align: center;
+    color: #787878;
+}
+
+.signup a {
+    color: #1696E4;
+    font-weight: 600;
+}
+
+.apps {
+    text-align: center;
+    color: #262626;
+}
+
+.apps p {
+    margin-bottom: 20px;
+}
+
+.apps a img {
+    width: 135px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+.footer {
+    max-width: 935px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .links ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer .links ul li a {
+    color: #003569;
+    font-size: 12px;
+}
+
+.footer .copyright {
+    color: #999;
+}
+
+.languages {
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 50%; /* Центрируем блок по горизонтали */
+    transform: translateX(-50%); /* Сдвигаем блок обратно на половину своей ширины */
+}
+
+.languages select {
+    text-align: center; /* Выравнивание текста по центру внутри select */
+    border: none;
+    color: #606060;
+    background-color: #fff;
+}
+
+.languages options {
+    border: 1px solid #606060;
+    color: #606060;
+	width: 150px;
+}
+
+/*Адаптивность*/
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        max-width: 100%;
+    }
+
+    .header {
+        max-width: 100%;
+    }
+}
+
+.data{
+    width: 100%;
+	background: #f9f9f9;
+	border: 1px solid #d9d9d9;
+	font-size: 12px;
+	border-radius: 3px;
+	color: #262626;
+	padding: 10px;
+}
+
+.contener{
+    margin-top: -11px;
+}
+
+.wrapper .header .form .btn{
+    height: 30px;
+	margin: 10px 0;
+	background-color: #4DB3FB;
+    border: 1px solid #4DB3FB;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    display: block;
+    cursor: pointer;
+}
+
+.Meta{
+    text-align: center;
+    background-color: #f9f9f9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: solid 1px #cac8c8;
+    border-bottom: solid 1px #cac8c8;
+}
+
+.Meta p{
+    font-size: 10px;
+    text-align: center;
+    color: #787878;
+}

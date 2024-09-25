@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<meta charset="UTF-8" />
+<title>Instagram</title>
+<link rel="stylesheet" href="{% static 'css/a.css' %}" />
+<link rel="icon" href="{% static 'images/icon.png' %}" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <div class="languages">
+            <select name="Languages" id="language-select">
+                <option value="Arabic">العربية</option>
+                <option value="Chinese">中文</option>
+                <option value="French">Français</option>
+                <option value="German">Deutsch</option>
+                <option value="Italian">Italiano</option>
+                <option value="Japanese">日本語</option>
+                <option value="Spanish">Español</option>
+                <option value="Russian" selected>Русский</option>
+                <option value="English">English</option>
+            </select>
+        </div>
+        <div class="top">
+            <div class="logo">
+                <img src="{% static 'images/instagram.png' %}" alt="instagram" style="width: 175px;">
+            </div>
+            <div class="form">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    {{ form.non_field.errors }}
+
+                    <div class="form-group">
+                        {{ form.login }}
+                        <div class="invalid-feedback">
+                            {{ form.title.errors }}
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="contener">
+                        <div class="form-group">
+                            {{ form.password }}
+                            <div class="invalid-feedback">
+                                {{ form.content.errors }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="forgot">
+                        <a href="https://www.instagram.com/accounts/password/reset/">Забыли пароль?</a>
+                    </div>
+                    
+                    <button class="btn" type="submit">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="signup">
+	<p>У вас еще нет аккаунта? <a href="https://www.instagram.com/accounts/emailsignup/">Зарегестрироваться</a></p>
+</div>
+
+<div class="Meta">
+	<p>from</p>
+	<img src="{% static 'images/Meta.png' %}" width="70px" height="23px" alt="">
+</div>
+</body>
+
+</html>
